@@ -17,7 +17,7 @@ function onDeviceReady() {
    console.log(window.plugins);
     alert('device ready');
     StatusBar.hide();
-    document.getElementById("takePicture").onclick = takePicture;
+    document.getElementById("takePicture").addEventListener("click", takePicture, false);
 }
 
 function takePicture(e) {
